@@ -543,8 +543,15 @@
     <ClInclude Include="dependencies\SFML-2.5.1\include\SFML\Window\Window.hpp" />
     <ClInclude Include="dependencies\SFML-2.5.1\include\SFML\Window\WindowHandle.hpp" />
     <ClInclude Include="dependencies\SFML-2.5.1\include\SFML\Window\WindowStyle.hpp" />
+    <ClInclude Include="src\ecs\components\CCollision.hpp" />
+    <ClInclude Include="src\ecs\components\CInput.hpp" />
+    <ClInclude Include="src\ecs\components\CLifeSpan.hpp" />
+    <ClInclude Include="src\ecs\Component.hpp" />
+    <ClInclude Include="src\ecs\components\CShape.hpp" />
+    <ClInclude Include="src\ecs\components\CTransform.hpp" />
     <ClInclude Include="src\ecs\Entity.hpp" />
     <ClInclude Include="src\ecs\EntityManager.hpp" />
+    <ClInclude Include="src\sfml.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dependencies\glm\detail\func_common.inl" />
@@ -1110,6 +1117,7 @@
   <ItemGroup>
     <ClCompile Include="dependencies\glm\detail\glm.cpp" />
     <ClCompile Include="src\ecs\EntityManager.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="dependencies\glm\CMakeLists.txt" />
