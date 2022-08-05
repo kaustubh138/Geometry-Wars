@@ -1194,6 +1194,15 @@
     <ClInclude Include="src\sfml.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\config\config.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config\tags.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config\format.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="dependencies\glm\detail\func_common.inl">
@@ -2062,8 +2071,13 @@
     <ClCompile Include="test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\config\config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="dependencies\glm\CMakeLists.txt" />
+    <Text Include="res\config.txt" />
+    <Text Include="res\config_specification.txt" />
   </ItemGroup>
 </Project>

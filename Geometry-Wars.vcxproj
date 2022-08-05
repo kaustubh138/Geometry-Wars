@@ -543,6 +543,9 @@
     <ClInclude Include="dependencies\SFML-2.5.1\include\SFML\Window\Window.hpp" />
     <ClInclude Include="dependencies\SFML-2.5.1\include\SFML\Window\WindowHandle.hpp" />
     <ClInclude Include="dependencies\SFML-2.5.1\include\SFML\Window\WindowStyle.hpp" />
+    <ClInclude Include="src\config\config.hpp" />
+    <ClInclude Include="src\config\format.hpp" />
+    <ClInclude Include="src\config\tags.hpp" />
     <ClInclude Include="src\ecs\components\CCollision.hpp" />
     <ClInclude Include="src\ecs\components\CInput.hpp" />
     <ClInclude Include="src\ecs\components\CLifeSpan.hpp" />
@@ -1116,11 +1119,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dependencies\glm\detail\glm.cpp" />
+    <ClCompile Include="src\config\config.cpp" />
     <ClCompile Include="src\ecs\EntityManager.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="dependencies\glm\CMakeLists.txt" />
+    <Text Include="res\config.txt" />
+    <Text Include="res\config_specification.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
