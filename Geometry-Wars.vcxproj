@@ -552,8 +552,14 @@
     <ClInclude Include="src\ecs\Component.hpp" />
     <ClInclude Include="src\ecs\components\CShape.hpp" />
     <ClInclude Include="src\ecs\components\CTransform.hpp" />
+    <ClInclude Include="src\ecs\entities\enemy.hpp" />
+    <ClInclude Include="src\ecs\entities\player.hpp" />
     <ClInclude Include="src\ecs\Entity.hpp" />
     <ClInclude Include="src\ecs\EntityManager.hpp" />
+    <ClInclude Include="src\game\game.hpp" />
+    <ClInclude Include="src\game\game_state.hpp" />
+    <ClInclude Include="src\game\systems\sMovments.hpp" />
+    <ClInclude Include="src\game\system.hpp" />
     <ClInclude Include="src\sfml.hpp" />
   </ItemGroup>
   <ItemGroup>
@@ -1121,6 +1127,8 @@
     <ClCompile Include="dependencies\glm\detail\glm.cpp" />
     <ClCompile Include="src\config\config.cpp" />
     <ClCompile Include="src\ecs\EntityManager.cpp" />
+    <ClCompile Include="src\game\game.cpp" />
+    <ClCompile Include="src\game\systems\sMovments.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
