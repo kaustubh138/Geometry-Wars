@@ -2,6 +2,12 @@
 
 namespace GeometryWars
 {
+	Game::Game()
+	{
+		init();
+		Configure();
+	}
+
 	void Game::Configure()
 	{
 		// Initialize Game Window
@@ -32,7 +38,7 @@ namespace GeometryWars
 	bool Game::init()
 	{
 		// Read Configurations
-		m_Config = std::make_unique<Config>();
+		m_Config = std::make_unique<Config::Config>();
 		m_Config->Read();
 
 		// Randomize Enemy Spawn Time
