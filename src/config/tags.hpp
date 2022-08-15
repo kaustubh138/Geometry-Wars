@@ -4,9 +4,12 @@
 
 namespace GeometryWars
 {
-	struct WindowTag {};
-	struct FontTag {};
-	struct PlayerTag {};
-	struct EnemyTag {};
-	struct BulletTag {};
+	namespace Config
+	{
+		struct WindowTag {};
+		struct FontTag {};
+		struct PlayerTag {};
+		struct EnemyTag {};
+		struct BulletTag {};
+	}
 }
