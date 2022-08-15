@@ -7,6 +7,7 @@ namespace GeometryWars
 	class CLifeSpan
 		: public Component
 	{
+		polyType
 	public:
 		int Remaining = 0;
 		int Total = 0;

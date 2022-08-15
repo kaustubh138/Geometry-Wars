@@ -8,6 +8,7 @@ namespace GeometryWars
 	class CShape
 		: public Component
 	{
+		polyType
 	public:
 		sf::CircleShape Shape;
 

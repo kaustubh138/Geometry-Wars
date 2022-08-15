@@ -19,7 +19,12 @@ namespace GeometryWars
 	class CInput
 		: public Component
 	{
-	public:
+		polyType
+	private:
 		Input activeIn = Input::NONE;
+
+	public:
+		void SetInput(Input i) { activeIn = i; }
+		Input GetInput() { return activeIn; }
 	};
 }

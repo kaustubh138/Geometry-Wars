@@ -7,6 +7,7 @@ namespace GeometryWars
 	class CCollision
 		: public Component
 	{
+		polyType
 	public:
 		float radius = 0;
 	
