@@ -4,6 +4,15 @@ namespace GeometryWars
 {
 #define polyType virtual void foo() override {}
 
+	enum class ComponentType
+	{
+		Collison,
+		Input,
+		LifeSpan,
+		Shape,
+		Transform
+	};
+
 	// Base Class for all components
 	class Component
 	{

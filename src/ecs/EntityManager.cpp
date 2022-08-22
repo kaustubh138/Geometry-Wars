@@ -7,7 +7,7 @@ namespace GeometryWars
         
     }
 
-    std::shared_ptr<Entity> EntityManager::AddEntity(const std::string& tag)
+    std::shared_ptr<Entity> EntityManager::AddEntity(const EntityTag& tag)
     {
 		std::shared_ptr<Entity> e = std::shared_ptr<Entity>(new Entity(m_TotalEntities++, tag));
         m_ToAdd.push_back(e);
@@ -16,7 +16,7 @@ namespace GeometryWars
 
 	void EntityManager::RemoveDeadEntites()
 	{
-		m_Entities.erase(std::remove_if(m_Entities.begin(), m_Entities.end(),
+		m_Entities.erase(std::remove_if(m_Entities.begin(), m_Entities.end() - 1,
 			[](auto& e) { return !e->IsAlive(); }));
 	}
 

@@ -8,16 +8,16 @@
 namespace GeometryWars
 {
 	using EntitiesVector = std::vector<std::shared_ptr<Entity>>;
-	using EntitiesMap = std::unordered_map<std::string, EntitiesVector>;
+	using EntitiesMap = std::unordered_map<EntityTag, EntitiesVector>;
 
 	class EntityManager
 	{
 	public:
 		EntityManager();
-		std::shared_ptr<Entity> AddEntity(const std::string& tag);
+		std::shared_ptr<Entity> AddEntity(const EntityTag& tag);
 
 		inline const EntitiesVector& GetEntities() const { return m_Entities; };
-		inline EntitiesVector& GetEntities(std::string& tag) { return m_EntityCache[tag]; };
+		inline EntitiesVector& GetEntities(const EntityTag& tag) { return m_EntityCache[tag]; };
 
 		void RemoveDeadEntites();
 
