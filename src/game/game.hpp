@@ -29,12 +29,13 @@ namespace GeometryWars
 	
 	private:
 		Game();
+		
 		void Configure();
 		bool init();
 	
 	public:
 		void Run();
-		static Game* GetInstance() 
+		static const Game* GetInstance() 
 		{ 
 			if (!m_Instance)
 				m_Instance = new Game();

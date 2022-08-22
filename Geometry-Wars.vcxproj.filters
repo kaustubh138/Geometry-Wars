@@ -2098,6 +2098,9 @@
     <ClCompile Include="src\game\systems\sMovments.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\ecs\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="dependencies\glm\CMakeLists.txt" />

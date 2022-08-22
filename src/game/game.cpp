@@ -2,6 +2,8 @@
 
 namespace GeometryWars
 {
+	Game* Game::m_Instance = nullptr;
+
 	Game::Game()
 	{
 		init();

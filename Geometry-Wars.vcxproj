@@ -74,25 +74,25 @@
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin-int\$(Platform)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)dependencies;$(SolutionDir)dependencies\glm;$(SolutionDir)dependencies\SFML-2.5.1\include;$(SolutionDir)src;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)dependencies\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)dependencies\SFML-2.5.1\bin;$(SolutionDir)dependencies\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin-int\$(Platform)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)dependencies;$(SolutionDir)dependencies\glm;$(SolutionDir)dependencies\SFML-2.5.1\include;$(SolutionDir)src;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)dependencies\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)dependencies\SFML-2.5.1\bin;$(SolutionDir)dependencies\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin-int\$(Platform)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)dependencies;$(SolutionDir)dependencies\glm;$(SolutionDir)dependencies\SFML-2.5.1\include;$(SolutionDir)src;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)dependencies\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)dependencies\SFML-2.5.1\bin;$(SolutionDir)dependencies\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin-int\$(Platform)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)dependencies;$(SolutionDir)dependencies\glm;$(SolutionDir)dependencies\SFML-2.5.1\include;$(SolutionDir)src;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)dependencies\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)dependencies\SFML-2.5.1\bin;$(SolutionDir)dependencies\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -1126,6 +1126,7 @@
   <ItemGroup>
     <ClCompile Include="dependencies\glm\detail\glm.cpp" />
     <ClCompile Include="src\config\config.cpp" />
+    <ClCompile Include="src\ecs\Entity.cpp" />
     <ClCompile Include="src\ecs\EntityManager.cpp" />
     <ClCompile Include="src\game\game.cpp" />
     <ClCompile Include="src\game\systems\sMovments.cpp" />
